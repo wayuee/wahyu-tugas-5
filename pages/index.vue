@@ -33,10 +33,10 @@
 </template>
 
 <script>
-import Data from "~/components/DataFromIndex";
+import CardTeam from "~/components/CardTeam";
 export default {
   components: {
-    Data,
+    CardTeam,
   },
   data() {
     return {

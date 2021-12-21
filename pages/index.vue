@@ -1,7 +1,11 @@
 <template>
-  <Data
-    :data-team="dataTeam"
-  />
+  <div>
+    <Data :data-team="dataDaniel" />
+    <Data :data-team="dataJonathan" />
+    <Data :data-team="dataKira" />
+    <Data :data-team="dataJeanette" />
+    <Data :data-team="dataPatrick" />
+  </div>
 </template>
 
 <script>
@@ -12,7 +16,7 @@ export default {
   },
   data() {
     return {
-      dataTeam: {
+      dataDaniel: {
         nameDaniel: "Daniel Clifford",
         imgDaniel: "/image-daniel.jpg",
         graduateDaniel: "Verified Graduate",

@@ -6,13 +6,13 @@
       >
         <img
           class="rounded-full float-left mx-5 mt-5"
-          :src="dataDaniel.img"
+          :src="dataTeam.imgDaniel"
           alt="Daniel"
         />
         <h4 class="z-20 font-semibold text-white mt-5">
-          {{ dataDaniel.name }}
+          {{ dataTeam.nameDaniel }}
         </h4>
-        <p class="z-20 text-gray-400">{{ dataDaniel.graduate }}</p>
+        <p class="z-20 text-gray-400">{{ dataTeam.graduateDaniel }}</p>
         <svg
           class="ml-96 -mt-14"
           width="120"
@@ -26,57 +26,57 @@
           />
         </svg>
         <h3 class="z-20 font-bold -mt-5 px-5 text-white">
-          {{ dataDaniel.bio }}
+          {{ dataTeam.bioDaniel }}
         </h3>
-        <p class="z-20 px-7 pt-3 text-gray-300">{{ dataDaniel.text }}</p>
+        <p class="z-20 px-7 pt-3 text-gray-300">{{ dataTeam.textDaniel }}</p>
       </div>
       <div class="rounded-xl border-solid border-2 black bg-gray-800">
         <img
           class="rounded-full float-left mt-5 mx-5"
-          :src="dataJonathan.img"
+          :src="dataTeam.imgJonathan"
           alt="Jonathan"
         />
-        <h4 class="font-semibold text-white mt-5">{{ dataJonathan.name }}</h4>
-        <p class="text-gray-400 pb-5">{{ dataJonathan.graduate }}</p>
-        <h3 class="font-bold px-3 pb-3 text-white">{{ dataJonathan.bio }}</h3>
-        <p class="px-5 text-gray-300">{{ dataJonathan.text }}</p>
+        <h4 class="font-semibold text-white mt-5">{{ dataTeam.nameJonathan }}</h4>
+        <p class="text-gray-400 pb-5">{{ dataTeam.graduateJonathan }}</p>
+        <h3 class="font-bold px-3 pb-3 text-white">{{ dataTeam.bioJonathan }}</h3>
+        <p class="px-5 text-gray-300">{{ dataTeam.textJonathan }}</p>
       </div>
       <div
         class="row-span-2 rounded-xl border-solid border-2 black bg-gray-500"
       >
         <img
           class="rounded-full float-left mt-5 mx-5"
-          :src="dataKira.img"
+          :src="dataTeam.imgKira"
           alt="Kira"
         />
-        <h4 class="font-semibold text-white mt-5">{{ dataKira.name }}</h4>
-        <p class="text-gray-400 pb-5">{{ dataKira.graduate }}</p>
-        <h3 class="font-bold px-3 pb-3">{{ dataKira.bio }}</h3>
-        <p class="px-3 pb-3 text-gray-300">{{ dataKira.text }}</p>
+        <h4 class="font-semibold text-white mt-5">{{ dataTeam.nameKira }}</h4>
+        <p class="text-gray-400 pb-5">{{ dataTeam.graduateKira }}</p>
+        <h3 class="font-bold px-3 pb-3">{{ dataTeam.bioKira }}</h3>
+        <p class="px-3 pb-3 text-gray-300">{{ dataTeam.textKira }}</p>
       </div>
       <div class="rounded-xl border-solid border-2 black bg-gray-500">
         <img
           class="rounded-full float-left mt-5 mx-5"
-          :src="dataJeanette.img"
+          :src="dataTeam.imgJeanette"
           alt="jeanette"
         />
-        <h4 class="font-semibold text-white mt-5">{{ dataJeanette.name }}</h4>
-        <p class="text-gray-400 pb-5">{{ dataJeanette.graduate }}</p>
-        <h3 class="font-bold px-3">{{ dataJeanette.bio }}</h3>
-        <p class="px-5 pt-3 text-gray-300">{{ dataJeanette.text }}</p>
+        <h4 class="font-semibold text-white mt-5">{{ dataTeam.nameJeanette }}</h4>
+        <p class="text-gray-400 pb-5">{{ dataTeam.graduateJeanette }}</p>
+        <h3 class="font-bold px-3">{{ dataTeam.bioJeanette }}</h3>
+        <p class="px-5 pt-3 text-gray-300">{{ dataTeam.textJeanette }}</p>
       </div>
       <div
         class="col-start-2 col-span-2 rounded-xl border-solid border-2 black bg-gray-800"
       >
         <img
           class="col-span-2 rounded-full float-left mt-5 mx-5"
-          :src="dataPatrick.img"
-          alt="patrick"
+          :src="dataTeam.imgPatrick"
+          alt="Patrick"
         />
-        <h4 class="font-semibold text-white mt-5">{{ dataPatrick.name }}</h4>
-        <p class="text-gray-400 pb-5">{{ dataPatrick.graduate }}</p>
-        <h3 class="font-bold px-5 pb-3 text-white">{{ dataPatrick.bio }}</h3>
-        <p class="px-5 text-gray-300">{{ dataPatrick.text }}</p>
+        <h4 class="font-semibold text-white mt-5">{{ dataTeam.namePatrick }}</h4>
+        <p class="text-gray-400 pb-5">{{ dataTeam.graduatePatrick }}</p>
+        <h3 class="font-bold px-5 pb-3 text-white">{{ dataTeam.bioPatrick }}</h3>
+        <p class="px-5 text-gray-300">{{ dataTeam.textPatrick }}</p>
       </div>
     </div>
   </div>
@@ -85,23 +85,7 @@
 <script>
 export default {
   props: {
-    dataDaniel: {
-      type: Object,
-      default: {},
-    },
-    dataJonathan: {
-      type: Object,
-      default: {},
-    },
-    dataKira: {
-      type: Object,
-      default: {},
-    },
-    dataJeanette: {
-      type: Object,
-      default: {},
-    },
-    dataPatrick: {
+    dataTeam: {
       type: Object,
       default: {},
     },

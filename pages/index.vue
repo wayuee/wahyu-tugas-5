@@ -14,16 +14,16 @@
           />
         </svg>
       <div class="col-start-1 col-span-2 rounded-xl border-solid border-2 black bg-blue-900">
-          <Data :data-team="dataTeam[0]" />
+          <CardTeam :data-team="dataTeam[0]" />
         </div>
         <div class="rounded-xl border-solid border-2 black bg-gray-800">
-          <Data :data-team="dataTeam[1]" />
+          <CardTeam :data-team="dataTeam[1]" />
         </div>
         <div class="row-span-2 rounded-xl border-solid border-2 black bg-gray-500">
-          <Data :data-team="dataTeam[2]" />
+          <CardTeam :data-team="dataTeam[2]" />
         </div>
         <div class="rounded-xl border-solid border-2 black bg-gray-500">
-          <Data :data-team="dataTeam[3]" />
+          <CardTeam :data-team="dataTeam[3]" />
         </div>
         <div class="col-start-2 col-span-2 rounded-xl border-solid border-2 black bg-gray-800">
           <Data :data-team="dataTeam[4]" />
@@ -34,8 +34,10 @@
 
 <script>
 import CardTeam from "~/components/CardTeam";
+import CardTeam from '../components/CardTeam.vue';
 export default {
   components: {
+    CardTeam
     CardTeam,
   },
   data() {
